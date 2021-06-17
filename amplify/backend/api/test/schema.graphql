@@ -1,0 +1,7 @@
+type Item @model {
+  id: ID!
+  name: String!
+  description: String
+  filePath: String!
+  price: Int!
+}
