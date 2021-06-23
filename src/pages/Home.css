@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Harlekin"; src:
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.eot"); src:
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.svg#Harlekin") format("svg"); }
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 50px 1000px rgba(0, 0, 0, 0.7);
+  object-fit: contain;
+  font-family: "Harlekin";
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 150px;
+  letter-spacing: 2px;
+  /* margin-top: -100px; */
+}
+
+.hero-container > p {
+  /* margin-top: 8px; */
+  color: #fff;
+  font-size: 32px;
+  font-family: "Harlekin";
+}
+
+.about-us-container{
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.about-us-container > h1 {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+.how-it-works-container{
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.how-it-works-container > h1 {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+
+.footer-container {
+  background-color: #242424;
+  padding: 2.5rem 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Harlekin";
+}
+
+.footer-container > h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    /* margin-top: -150px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+
+}

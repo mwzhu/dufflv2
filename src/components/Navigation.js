@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import './Navigation.css';
 
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <nav className="navbar navbar-expand">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Duffl
+            Snagly
           </Link>
 
           <div>

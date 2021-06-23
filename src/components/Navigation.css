@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Harlekin"; src:
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.eot"); src:
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/aa580ee3796d87cb4a23d7975982cae9.svg#Harlekin") format("svg"); }
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.navigation {
+  background-color: #242424;
+  width: 100%;
+  margin: 0 0 0 0;
+  /* opacity: 0; */
+  /* background-color: rgba(0,0,0,0.0) */
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: "Harlekin";
+  letter-spacing: 1.5px;
+}
