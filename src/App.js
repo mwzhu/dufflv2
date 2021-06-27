@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
 import Amplify from '@aws-amplify/core'
 import { Auth } from '@aws-amplify/auth';
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route path="/checkout">
           <Checkout />
+        </Route>
+        <Route path="/auth">
+          <AmplifySignOut />
         </Route>
       </Switch>
     </Router>
