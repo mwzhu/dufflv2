@@ -8,6 +8,8 @@ function Home() {
       <div className="hero-container">
         <img src='/img/intro-bg.jpg'/>
         <h1>Snagly</h1>
+        <h4>Delivered to you <br></br> in 10 minutes!</h4>
+
       </div>
       <div className="about-us">
         <h1>About Us</h1>

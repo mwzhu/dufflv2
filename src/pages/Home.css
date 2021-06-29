@@ -28,6 +28,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   box-shadow: inset 0px 0px 50px 1000px rgba(0, 0, 0, 0.7);
   object-fit: contain;
   font-family: "Harlekin";
@@ -37,6 +38,17 @@ img {
   color: #fff;
   font-size: 150px;
   letter-spacing: 2px;
+}
+
+.hero-container > h4 {
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-family: "Inter";
+  font-weight: 280;
+  margin-left: -60px;
+  margin-top: -50px;
+  text-align: center;
 }
 
 .hero-container > p {
