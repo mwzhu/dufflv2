@@ -73,6 +73,12 @@ img {
   letter-spacing: 1px;
   padding-top: 50px;
 }
+
+.order-image {
+  width: 20%;
+  height: 20%;
+}
+
 .how-it-works {
   height: 500px;
   width: 100vw;
