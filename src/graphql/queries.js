@@ -5,9 +5,9 @@ export const getItem = /* GraphQL */ `
   query GetItem($id: ID!) {
     getItem(id: $id) {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt
@@ -23,9 +23,9 @@ export const listItems = /* GraphQL */ `
     listItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        name
+        title
         description
-        filePath
+        image
         price
         createdAt
         updatedAt

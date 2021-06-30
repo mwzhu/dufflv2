@@ -5,9 +5,9 @@ export const onCreateItem = /* GraphQL */ `
   subscription OnCreateItem {
     onCreateItem {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt
@@ -18,9 +18,9 @@ export const onUpdateItem = /* GraphQL */ `
   subscription OnUpdateItem {
     onUpdateItem {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt
@@ -31,9 +31,9 @@ export const onDeleteItem = /* GraphQL */ `
   subscription OnDeleteItem {
     onDeleteItem {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt

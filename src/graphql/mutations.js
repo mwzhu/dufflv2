@@ -8,9 +8,9 @@ export const createItem = /* GraphQL */ `
   ) {
     createItem(input: $input, condition: $condition) {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt
@@ -24,9 +24,9 @@ export const updateItem = /* GraphQL */ `
   ) {
     updateItem(input: $input, condition: $condition) {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt
@@ -40,9 +40,9 @@ export const deleteItem = /* GraphQL */ `
   ) {
     deleteItem(input: $input, condition: $condition) {
       id
-      name
+      title
       description
-      filePath
+      image
       price
       createdAt
       updatedAt
