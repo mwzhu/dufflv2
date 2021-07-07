@@ -29,7 +29,8 @@
         "createOrder": {
           "deploymentBucketName": "amplify-test-dev-160054-deployment",
           "s3Key": "amplify-builds/createOrder-5659415a7a6143683543-build.zip"
-        }
+        },
+        "test56c687daPostConfirmation": {}
       }
     }
   }
