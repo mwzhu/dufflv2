@@ -20,6 +20,16 @@
           "appId": "dwuoit91irg1r",
           "type": "cicd"
         }
+      },
+      "function": {
+        "processPayment": {
+          "deploymentBucketName": "amplify-test-dev-160054-deployment",
+          "s3Key": "amplify-builds/processPayment-48694f71554354732b73-build.zip"
+        },
+        "createOrder": {
+          "deploymentBucketName": "amplify-test-dev-160054-deployment",
+          "s3Key": "amplify-builds/createOrder-5659415a7a6143683543-build.zip"
+        }
       }
     }
   }

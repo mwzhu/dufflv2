@@ -1,6 +1,6 @@
 {
     "identityPoolName": "test56c687da_identitypool_56c687da",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "test56c687da",
     "userPoolName": "test56c687da_userpool_56c687da",
     "autoVerifiedAttributes": [
