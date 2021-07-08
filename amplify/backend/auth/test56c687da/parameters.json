@@ -1,6 +1,6 @@
 {
     "identityPoolName": "test56c687da_identitypool_56c687da",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "test56c687da",
     "userPoolName": "test56c687da_userpool_56c687da",
     "autoVerifiedAttributes": [
@@ -45,33 +45,9 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
-    "userPoolGroupList": [
-        "Admin"
-    ],
+    "useDefault": "default",
+    "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": [
-        {
-            "category": "function",
-            "resourceName": "test56c687daPostConfirmation",
-            "triggerProvider": "Cognito",
-            "attributes": [
-                "Arn",
-                "Name"
-            ]
-        }
-    ],
-    "thirdPartyAuth": true,
-    "authProviders": [],
-    "userPoolGroups": true,
-    "adminQueries": false,
-    "triggers": "{\n  \"PostConfirmation\": [\n    \"custom\"\n  ]\n}",
-    "hostedUI": false,
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "breakCircularDependency": true,
-    "permissions": [],
-    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"test56c687daPostConfirmation\"\n  }\n]"
+    "dependsOn": []
 }

@@ -6,10 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { CartProvider } from './context/cart';
 import { ItemProvider } from './context/items';
 
-import Amplify from 'aws-amplify';
-import config from './aws-exports';
-Amplify.configure(config);
-
 ReactDOM.render(
   <ItemProvider>
     <CartProvider>

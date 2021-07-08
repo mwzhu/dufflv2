@@ -33,16 +33,6 @@ enum OrderStatus {
   FAILED
 }
 
-type User @model
-  @auth(rules: [
-    { allow: groups, groups: ["Admin"] },
-    { allow: owner, ownerField: "username", operations: [read] }
-  ]) {
-  id: ID!
-  username: String!
-  email: String! 
-}
-
 input CartItem {
   id: ID!
   title: String
