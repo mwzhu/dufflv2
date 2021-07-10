@@ -28,6 +28,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   box-shadow: inset 0px 0px 50px 1000px rgba(0, 0, 0, 0.7);
   object-fit: contain;
   font-family: "Harlekin";
@@ -39,11 +40,101 @@ img {
   letter-spacing: 2px;
 }
 
+.hero-container > h4 {
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-family: "Inter";
+  font-weight: 280;
+  margin-left: -60px;
+  margin-top: -50px;
+  text-align: center;
+}
+
 .hero-container > p {
   color: #fff;
   font-size: 32px;
   font-family: "Harlekin";
 }
+
+.how-it-works {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.how-it-works > h1 {
+  color: black;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+
+.how-it-works > h2 {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  margin-left: -10px;
+  margin-top: 230px;
+  word-spacing: 325px;
+  }
+
+.browse-text > h3 {
+  color: black;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  margin-left: -815px;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.order-text > h3 {
+  color: black;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  margin-left: -10px;
+  margin-top: -84px;
+  text-align: center;
+} 
+
+.recieve-text > h3 {
+  color: black;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  margin-left: 780px;
+  margin-top: -84px;
+  text-align: center;
+}
+
+img[src="/img/order.png"] {
+  margin-left: -510px;
+  margin-top: 50px;
+  height: 220px;
+  width: 220px;
+}
+
+img[src="/img/pay.png"] {
+  margin-left: -110px;
+  margin-top: 50px;
+  height: 220px;
+  width: 220px;
+}
+
+img[src="/img/deliver.png"] {
+  margin-left: 290px;
+  margin-top: 50px;
+  height: 220px;
+  width: 220px;
+}
+
 
 .about-us {
   height: 500px;
@@ -56,22 +147,6 @@ img {
 }
 
 .about-us > h1 {
-  color: black;
-  font-size: 40px;
-  letter-spacing: 1px;
-  padding-top: 50px;
-}
-.how-it-works {
-  height: 500px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
-  font-family: "Inter";
-}
-
-.how-it-works > h1 {
   color: black;
   font-size: 40px;
   letter-spacing: 1px;
