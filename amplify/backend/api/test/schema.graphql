@@ -28,6 +28,16 @@ type Order
   items: [ItemOrder] @connection(keyName: "byOrder", fields: ["id"])
 }
 
+type User @model
+  @auth(rules: [
+    { allow: groups, groups: ["Admin"] },
+    { allow: owner, ownerField: "username", operations: [read] }
+  ]) {
+    id: ID!
+    username: String!
+    email: String!
+  }
+
 enum OrderStatus {
   SUCCESS
   FAILED
