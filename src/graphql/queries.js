@@ -34,3 +34,30 @@ export const listItems = /* GraphQL */ `
     }
   }
 `;
+export const searchItems = /* GraphQL */ `
+  query searchItems(
+    $filter: SearchableItemFilterInput
+    $sort: SearchableItemSortInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    searchItems(
+      filter: $filter
+      sort: $sort
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        title
+        description
+        image
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+      total
+    }
+  }
+`;

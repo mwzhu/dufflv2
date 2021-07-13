@@ -1,4 +1,4 @@
-type Item @model {
+type Item @model @searchable {
   id: ID!
   title: String!
   description: String
