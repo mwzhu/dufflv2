@@ -42,11 +42,24 @@ function Home() {
           <h3>Your order will be at your doorstep <br></br> within 10 to 15 minutes, guaranteed</h3>
         </div>
       </div>
-      <div className="about-us">
-        <h1>About Us</h1>
+      <div className="offerings">
+        <h1>OFFERINGS</h1>
+        <h2>Categories</h2>
+        <h3>View All</h3>
+        <h4>Candy Chips Drinks Fruit Snacks Vegetables</h4>
       </div>
       <div className="footer">
         <h1>Snagly</h1>
+        <div className="facebook">
+          <img src='/img/fb.png'/>
+        </div>
+        <div className="instagram-image">
+          <img src='/img/ig.png'/>
+        </div>
+        <div className="linkedin">
+          <img src='/img/li.png'/>
+        </div>
+        <h2>Contact_Us Mission About_Us Join_Us</h2>
       </div>
     </div>
   );

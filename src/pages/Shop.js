@@ -23,9 +23,14 @@ const Shop = () => {
   
     return (
       <div className="App">
-        <header className="App-header">
-          <h3> Shop page</h3>
-        </header>
+        <div className="searchBar">
+          <div id="searchWrapper">
+            <input
+              type="text"
+              placeholder="Find your product"
+            />
+          </div>
+          </div>
         <div className = "itemList">
           { items.map(item => {
             return (
