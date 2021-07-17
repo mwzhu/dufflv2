@@ -57,6 +57,16 @@ img {
   font-family: "Harlekin";
 }
 
+.searchBar {
+  font-family: "Inter";
+  position: relative;
+  width: 200px;
+  top: 30px;
+  display: inline-block;
+
+
+}
+
 .how-it-works {
   height: 500px;
   width: 100vw;
@@ -99,7 +109,7 @@ img {
   font-size: 12px;
   letter-spacing: 1px;
   padding-top: 50px;
-  margin-left: -10px;
+  margin-left: -20px;
   margin-top: -84px;
   text-align: center;
 } 
@@ -109,7 +119,7 @@ img {
   font-size: 12px;
   letter-spacing: 1px;
   padding-top: 50px;
-  margin-left: 780px;
+  margin-left: 770px;
   margin-top: -84px;
   text-align: center;
 }
@@ -162,6 +172,7 @@ img[src="/img/deliver.png"] {
   align-items: center;
   font-family: "Harlekin";
 }
+
 
 .footer > h1 {
   color: white;

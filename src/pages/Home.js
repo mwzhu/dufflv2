@@ -10,6 +10,14 @@ function Home() {
         <img src='/img/intro-bg.jpg'/>
         <h1>Snagly</h1>
         <h4>Delivered to you <br></br> in 10 minutes!</h4>
+        <div className="searchBar">
+          <div id="searchWrapper">
+            <input
+              type="text"
+              placeholder="Find your product"
+            />
+          </div>
+        </div>
       </div>
       <div className="how-it-works">
         <h1>How it Works</h1>
