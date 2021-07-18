@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 
-let container = document.querySelector('.Delivery');
-let deliveryButton = document.createElement("button");
-let text = document.createTextNode("Delivery");
-deliveryButton.appendChild(text);
-container.appendChild(deliveryButton)
+// let container = document.querySelector('.Delivery');
+// let deliveryButton = document.createElement("button");
+// let text = document.createTextNode("Delivery");
+// deliveryButton.appendChild(text);
+// container.appendChild(deliveryButton)
 
 const Cart = () => {
     return (
