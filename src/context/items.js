@@ -29,7 +29,10 @@ const ItemProvider = ({ children }) => {
 
     const fetchItems = async () => {
         try {
-            const itemData = await API.graphql(graphqlOperation(listItems));
+            const itemData = await API.graphql({
+              query: listItems,
+              authMode: 'AWS_IAM',
+            });
             const itemList = itemData.data.listItems.items;
             console.log('item list', itemList);
             setItems(itemList);
