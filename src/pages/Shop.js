@@ -3,7 +3,8 @@ import { useParams, useHistory } from "react-router-dom";
 import { CartContext } from "../context/cart";
 import { ItemContext } from '../context/items';
 import SearchBar from "../components/SearchBar";
-import SearchFound from "../components/SearchFound"
+import SearchFound from "../components/SearchFound";
+import { AiFillPlusCircle } from "react-icons/ai";
 
 
 
@@ -19,14 +20,13 @@ const Shop = () => {
         </header>
         <SearchBar search={search} clear={clear}/>
         <SearchFound searchFound = {searchFound} />
-        <div>
+        <section className="books">
           { items.map((item) => {
             return (
-              <section>
-                <p>{item.title}</p>
-                <p>{item.description}</p>
-                <p>{item.price}</p>
-                <img src={item.image} alt={item.title} />
+              <article className="book">
+                <div>
+                  <img src={item.image} alt={item.title} />
+                </div>
                 <button
                   className="btn"
                   onClick={() => {
@@ -34,12 +34,12 @@ const Shop = () => {
                     history.push("/cart");
                   }}
                 >
-                  Add to Cart
+                  <AiFillPlusCircle />
                 </button>
-              </section>
+              </article>
             )
           })}
-        </div>
+        </section>
       </div>
     );
   }
