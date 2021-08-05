@@ -47,8 +47,11 @@ const ItemProvider = ({ children }) => {
       var itemData;
 
       if (searchLabel.label != "") {
-        itemData = await API.graphql(graphqlOperation(searchItems, {
-          filter: {title: { matchPhrase: searchLabel.label}}}));
+        itemData = await API.graphql({
+          query: searchItems,
+          variables: {filter: {title: { matchPhrase: searchLabel.label}}},
+          authMode: 'AWS_IAM'
+        });
 
         const itemList = itemData.data.searchItems.items;
         if (itemList.length > 0) {
