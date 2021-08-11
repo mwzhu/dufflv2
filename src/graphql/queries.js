@@ -9,6 +9,7 @@ export const getItem = /* GraphQL */ `
       description
       image
       price
+      category
       createdAt
       updatedAt
     }
@@ -27,6 +28,7 @@ export const listItems = /* GraphQL */ `
         description
         image
         price
+        category
         createdAt
         updatedAt
       }
@@ -53,6 +55,7 @@ export const searchItems = /* GraphQL */ `
         description
         image
         price
+        category
         createdAt
         updatedAt
       }

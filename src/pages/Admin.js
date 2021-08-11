@@ -18,7 +18,11 @@ const Admin = () => {
         e.preventDefault();
         try {
             if (!itemDetails.title || !itemDetails.price) return
-            await API.graphql(graphqlOperation(createItem, { input: itemDetails }))
+            await API.graphql({
+                query: createItem, 
+                variables: { input: itemDetails },
+                authMode: 'AWS_IAM'
+            })
             setItemDetails({ title: "", description: "", image: "", price: "" })
         } catch (err) {
             console.log('error creating todo:', err)
@@ -92,6 +96,16 @@ const Admin = () => {
                                         type="text"
                                         placeholder="What is the Price of the item (USD)"
                                         onChange={(e) => setItemDetails({ ...itemDetails, price: e.target.value })}
+                                        required
+                                    /></p>
+                            </div>
+                            <div className="price-form">
+                                <p><label htmlFor="category">Category (Grocery, Snack, Beverage, Sweet, Ready to Eat, Personal Care, Student Essential)  </label>
+                                    <input
+                                        name="category"
+                                        type="text"
+                                        placeholder="What is the Category of the item"
+                                        onChange={(e) => setItemDetails({ ...itemDetails, category: e.target.value })}
                                         required
                                     /></p>
                             </div>

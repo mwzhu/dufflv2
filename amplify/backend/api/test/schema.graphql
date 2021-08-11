@@ -4,6 +4,7 @@ type Item @model @searchable {
   description: String
   image: String
   price: Float!
+  category: String!
   orders: [ItemOrder] @connection(keyName: "byItem", fields: ["id"])
 }
 
